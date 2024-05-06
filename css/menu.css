@@ -56,16 +56,16 @@
 
 /* ======================poker-start=================================== */
 
-.poker-container {
+.poker-containers {
     padding: 1.2rem 0;
     background-image: url(../img/poker-back-image.jpg);
     /* 画像を左寄せに配置 */
     background-position: 15% 75%;
         /* 画像をタイル状に繰り返し表示しない */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 
     /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     
     /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
     background-size: cover;
