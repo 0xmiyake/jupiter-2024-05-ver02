@@ -60,7 +60,7 @@
     padding: 1.2rem 0;
     background-image: url(../img/poker-back-image.jpg);
     /* 画像を左寄せに配置 */
-    background-position: left center;
+    background-position: left;
     
     /* 画像をタイル状に繰り返し表示しない */
     background-repeat: no-repeat;
