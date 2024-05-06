@@ -60,8 +60,7 @@
     padding: 1.2rem 0;
     background-image: url(../img/poker-back-image.jpg);
     /* 画像を左寄せに配置 */
-    background-position: left;
-    
+    background-position: 25% 75%;    
     /* 画像をタイル状に繰り返し表示しない */
     background-repeat: no-repeat;
 
@@ -71,6 +70,7 @@
     /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
     background-size: cover;
 }
+
 .poker-contents {
     border: 2px solid var(--fontSubColor);
     max-width: 700px;
