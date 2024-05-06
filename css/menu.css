@@ -68,7 +68,7 @@
     /* background-attachment: fixed; */
     
     /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
-    /* background-size: cover; */
+    background-size: cover;
 }
 
 .poker-contents {
