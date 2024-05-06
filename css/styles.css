@@ -1,0 +1,1049 @@
+@import "./nav.css";
+@import "./menu.css";
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --backMainRed: #860000;
+  --backMainBlack: #000;
+  --backSubWhite: #fff;
+  --fontMainColor: #fff;
+  --fontSubColor: #faeec0;
+  --fontSubRed: #860000;
+  --fontSubBlack: #000;
+
+}
+
+body {
+  width: 100vw;
+  background-color: var(--backMainRed);
+  color: var(--fontMainColor);
+  font-family: 'Noto Serif JP', serif;
+  font-size: 16px;
+  background-image: url(../img/jupiter.png);
+  background-size: 140px;
+}
+
+.black {
+  width: 100vw;
+  background-color: var(--backMainBlack);
+  
+
+} 
+
+h2 {
+  font-size: 1.2rem;
+  color: var(--fontMainColor);
+  text-transform: capitalize;
+  text-align: center;
+  /* height: 30px; */
+  /* background-color: aqua; */
+}
+
+h3 {
+  color: var(--fontMainColor);
+  text-transform: capitalize;
+  /* text-align: center; */
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.h2 {
+  width: 220px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.h2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.h3 {
+  width: 220px;
+  height: 100px;
+
+}
+
+.h3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.h4 {
+  width: 220px;
+  height: 60px;
+}
+
+.h4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  align-items: center;
+  /* text-align: center; */
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.heart {
+  width: 40px;  /* 正方形を作る */
+  height: 40px; /* 正方形を作る */
+  position: relative;/* 基準位置とする */
+}
+.heart::before,
+.heart::after {
+  content: "";  /* 疑似要素に必須 */
+  width: 50%;   /* ハートの丸い部分の大きさにかかわる */
+  height: 80%;  /* ハートの高さにかかわる */
+  background: var(--fontSubColor); /* ハートの色 */
+  border-radius: 25px 25px 0 0; /* ハートの半円を生成 */
+  display: block; /* ブロック要素にする */
+  position: absolute; /* 相対位置に指定 */
+}
+.heart::before {
+  transform: rotate(-45deg); /* 左に回転 */
+  left: 14%;                 /* 左からの位置を指定 */
+}
+.heart::after {
+  transform: rotate(45deg);  /* 右に回転 */
+  right: 14%;                /* 右からの位置を指定 */
+}
+
+.heart-small {
+  width: 25px;  /* 正方形を作る */
+  height: 25px;
+}
+
+
+
+
+/*  =================nav-start=====================*/
+
+nav {
+  width: 100vw;
+  position: fixed;
+  z-index: 2000;
+  height: 120px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(66, 53, 53, 0.4);
+
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 0.8rem 1.1rem; */
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  
+}
+
+.hum-menu {
+  display: none;
+}
+
+.nav-icon {
+  width: 310px;
+  height: 100px;
+}
+
+.nav-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.jupiter {
+  margin-left: 8px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.nav-contents ul {
+  display: flex;
+  justify-content: right;
+}
+
+.nav-contents ul li {
+  color: var(--fontMainColor);
+  margin: 5px 20px;
+  font-size: 18px;
+}
+
+.nav-contents ul li:hover {
+  border-bottom: 1px solid var(--fontSubColor);
+  margin-bottom: 2px;
+}
+
+.nav-contents ul li a {
+  color: var(--fontMainColor);
+  text-transform: capitalize;
+}
+
+.nav-contents ul li a:hover {
+  color: var(--fontSubColor);
+}
+
+.sns ul {
+  display: flex;
+  justify-content: right;
+  font-size: 30px;
+  margin: 10px 20px;
+}
+
+.sns ul li {
+  margin: 0 20px;
+}
+
+.sns ul li a {
+  color: var(--fontMainColor);
+}
+
+.sns ul li a i:hover {
+  color: var(--fontSubColor);
+}
+
+/* ===================nav-end=============================== */
+
+
+
+/* ===================header-start============================ */
+
+header {
+  margin-top: 120px;
+}
+
+.header-back-image {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background-image: url("../img/main-image.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+/* ===================header-end============================ */
+
+/* ===================top-start============================ */
+
+
+.top-h1 {
+  width: 310px;
+  height: 70px;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.top-h1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-image {
+  width: 140px;
+  height: 140px;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.top-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.with-maid {
+  color: var(--fontMainColor);
+  padding: 0 0.1rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  text-align: center;
+  text-shadow: var(--fontSubColor) 1px 0 10px;
+}
+
+.top-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===================top-end============================ */
+
+
+/* ===================concept-start=============================/ */
+
+
+.concept-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.concept-frame {
+  border: var(--fontMainColor) 2px solid;
+  border-radius: 5%;
+}
+
+.concept-image {
+  max-width: 280px;
+  height: 380px;
+  margin: 5px;
+}
+
+.concept-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  object-fit: cover;
+}
+
+.concept-frame1 {
+  max-width: 360px;
+  border: var(--fontSubColor) 2px solid;
+  border-radius: 5%;
+  background-color: var(--backMainRed);
+}
+
+.concept-content {
+  padding: 0.8rem 0.3rem;
+}
+
+.concept-content-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.4rem 0 0.2rem 0;
+}
+
+.concept-content-title h2 {
+  margin: 0 8px;
+}
+
+.concept-content-title i {
+  padding-top: 3px;
+  /* background-color: aqua; */
+}
+
+.concept-textbox {
+  margin: 0 auto;
+}
+
+.concept-text {
+  margin: 1.2rem 0;
+  padding: 0 5px;
+  text-align: left;
+}
+
+.concept-text-people {
+  margin-bottom: 8px;
+  width: 340px;
+  padding: 0 3px;
+  text-align: left;
+  border-bottom: 2px solid var(--fontSubColor); /* 下線のスタイルを指定 */
+  /* background-color: aqua; */
+
+}
+
+.concept-text-people h3 {
+  display: inline-block; /* 複数行にまたがる要素に下線を引くために必要 */
+  padding-bottom: 5px; 
+  color: var(--fontSubColor);
+}
+
+/* ===================concept-end=============================/ */
+
+/* ====================game-start================= */
+
+.game-container {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-height: 600px;
+}
+
+.game-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url(../img/game_menu.jpg);
+  background-size: cover;
+  background-position: 50%;
+  padding: 2.3rem 0;
+}
+
+.game-content {
+  width: calc(900px/4);
+  height: 300px;
+  background-size: cover;
+  position: relative;
+
+  /* margin: 0 1.2rem; */
+}
+
+.game-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.game-names {
+  width: 90%;
+  height: 90%;
+  background-color: rgba(66, 53, 53, 0.7);
+  border: 1px solid rgb(193, 175, 84);
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.game-name  {
+  width: 90%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.game-name h3 {
+  font-size: 2.2rem;
+  padding-bottom: 1.8rem;
+
+}
+
+.game-name p {
+  text-align: left;
+  padding-top: 3px;
+}
+
+.game-tournament-container {
+  margin-top: 3rem;
+  border: 1px solid var(--fontSubColor);
+  width: 600px;
+  border-radius: 5%;
+  padding: 1.3rem;
+  /* background-color: aqua; */
+
+}
+
+.game-tournament-abouts {
+  /* margin-left: 2rem; */
+  padding-top: 1.2rem  ;
+  font-size: 1.1rem;
+  /* background-color: green; */
+}
+
+.game-tournament-about {
+  margin-bottom: 1.2rem;
+  padding-bottom: 1.2rem;
+  /* background-color: pink; */
+}
+
+.game-tournament-detail {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--fontMainColor);
+  margin-left: 2.2rem;
+}
+
+.game-tournament-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-tournament-day {
+  padding: 0.5rem;
+  /* background-color: red; */
+}
+/* ======================game-end==================== */
+
+
+/* ======================menu-start================= */
+
+.md-left {
+  margin-left: 7px;
+}
+
+.md-left1 {
+  margin-left: 7px;
+}
+
+.menu-container {
+  /* text-align: left; */
+  padding-bottom: 4rem;
+  align-items: center;
+  /* text-align: center; */
+  margin: 0 auto;
+  padding: 20px 0;
+  
+}
+
+.menu-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-side-image {
+  width: 160px;
+  height: 600px;
+}
+
+.menu-side-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-main {
+  margin: 0 auto;
+}
+
+.menu-details {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/menu-main-image.jpg);
+  padding: 5rem;
+  /* background-color: #000; */
+  /* background-color: rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 100); */
+}
+
+.menu-deatail-phone {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+.menu-detail {
+  max-width: 150px;
+  border: solid 2px var(--fontSubColor);
+  border-radius: 5%;
+  background-color: var(--backMainRed);
+  text-align: center;
+  /* padding-bottom: 13px; */
+  padding: 0 5px;
+  height: 300px;
+  position: relative;
+  /* display: flex; flexboxを使用して子要素を配置 */
+  /* flex-direction: column; 子要素を縦方向に配置 */
+  /* justify-content: space-between; 子要素を均等に配置 */
+}
+
+.menu-detail:hover {
+  background-color: var(--backMainBlack);
+}
+
+
+.menu-h3 {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  text-align: center;
+  align-items: center;
+} 
+
+.menu-h3 h3{
+  /* font-size: 1rem; */
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+.menu-detail-image {
+  width: 137px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.menu-detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8%;
+  border: solid 1px var(--fontSubColor);
+}
+
+.menu-detail-messages {
+  margin: 20px 0;
+  text-align: left;
+}
+
+
+
+.menu-drink {
+  text-align: left;
+}
+
+.menu-drink-price {
+  text-align: right;
+}
+
+.menu-detail button {
+  width: 120px;
+  height: 40px;
+  color: var(--fontSubRed);
+  background-color: var(--backSubWhite);
+  /* padding: 8px 20px; */
+  border: solid 1px var(--fontMainColor);
+  border-radius: 5%;
+  font-size: 1rem;
+  /* margin-bottom: 10px; ボタンと下部のスペースを作成 */
+  position: absolute;
+  bottom: 10px; /* Adjust this value to position the button */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu-detail button:hover {
+  color: var(--backSubWhite);
+  background-color: var(--fontSubBlack);
+}
+
+/* ======================menu-end==================== */
+
+
+/* ======================sns-start==================== */
+
+.sns-container {
+  padding: 3rem 10px;
+}
+
+
+
+.sns-border {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid var(--fontSubColor);
+  border-radius: 5%;
+
+}
+
+.sns-sub-title {
+  display: flex;
+  justify-content: center;
+  padding:2.2rem 0;
+  align-items: center;
+}
+
+.sns-memo {
+  width: 270px;
+  height:110px;
+}
+
+.sns-memo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sns-timeline {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+/* ======================sns-end==================== */
+
+
+/* ======================access-start==================== */
+
+.access-container {
+  max-width: 100%;
+
+}
+
+.access-top-image {
+  width: 100vw;
+  height: 260px;
+}
+
+.access-top-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.access-map {
+  padding: 1.2rem;
+  border: 2px solid var(--fontSubColor);
+  border-radius: 10%;
+  width:600px;
+  margin: 3rem auto;
+  height: 400px;
+}
+
+.access-map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 2px solid var(--fontSubColor);
+
+}
+
+.access-info {
+  display: flex;
+  justify-content: center;
+  color: var(--fontMainColor);
+}
+
+.access-info-image {
+  width: 290px;
+  height: 300px;
+}
+
+.access-info-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.access-info-details {
+  text-align: left;
+  background-color: rgba(66, 53, 53, 0.4);
+  padding: 1.2rem;
+  height: 300px;
+  width: 320px;
+}
+
+.access-info-detail {
+  display: flex;
+  justify-content: left;
+  margin: 15px 0;
+  
+  /* align-items: center; */
+}
+
+.access-info-detail i {
+  color: var(--fontSubColor);
+  padding-top: 3px;
+}
+
+
+.access-info-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13px;
+}
+
+.access-info-box span {
+  display: block; /* テキストをブロック要素として配置 */
+  /* margin-bottom: 5px; 必要に応じて調整 */
+}
+
+.access-info-open {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+/* ======================access-end==================== */
+
+
+/* ======================waiting-here-start==================== */
+
+
+.waiting-here-container {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+}
+
+.waiting-here-contents {
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
+.waiting-here-omati-image {
+  height: 90px;
+  width: 200px;
+}
+
+.waiting-here-omati-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.waiting-here-karin {
+  height: 200px;
+  width: 350px;
+}
+
+.waiting-here-karin img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* ======================waiting-here-end==================== */
+
+
+/* ======================footer-start==================== */
+
+footer {
+  background-color: var(--backMainBlack);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icon {
+  width: 330px;
+  height: 120px;
+}
+
+.footer-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} 
+
+
+.footer-nav ul {
+  display: flex;
+  justify-content: left;
+}
+
+.footer-nav ul li {
+  color: var(--fontMainColor);
+  margin: 5px 10px;
+  font-size: 18px;
+}
+
+.footer-nav ul li:hover {
+  border-bottom: 1px solid var(--fontSubColor);
+  margin-bottom: 2px;
+}
+
+.footer-nav ul li a {
+  color: var(--fontMainColor);
+  text-transform: capitalize;
+
+}
+
+.footer-nav ul li a:hover {
+  color: var(--fontSubColor);
+}
+
+.footer-sns ul {
+  display: flex;
+  justify-content: left;
+  font-size: 30px;
+  padding: 20px 10px;
+}
+
+.footer-sns ul li {
+  margin: 0 20px;
+  
+  
+}
+
+
+.footer-sns ul li a {
+  color: var(--fontMainColor);
+  
+  
+}
+
+.footer-sns ul li a i:hover {
+  color: var(--fontSubColor);
+  
+}
+
+.footer-image {
+  width: 220px;
+  height: 240px;
+}
+
+.footer-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.c {
+  color: rgb(130, 130, 130);
+}
+/* ======================footer-end==================== */
+
+
+
+
+@media screen and (max-width:480px) {
+
+
+header {
+  margin-top: 100px;
+}
+
+  body {
+    font-size: 14px;
+  }
+
+  nav {
+    height: 100px;
+  }
+
+  .heart {
+    width: 20px;  /* 正方形を作る */
+    height: 20px; /* 正方形を作る */
+  }
+
+  .nav-icon {
+    width: 260px;
+    height: 80px;
+  }
+
+  .nav-textbox {
+    display: none;
+  }
+
+    
+  .hum-menu {
+    display: block;
+    font-size: 1rem;
+  }
+
+  .with-maid {
+    font-size: 1.1rem;
+    /* padding: 0 1rem; */
+  }
+
+  .concept-container {
+      flex-direction: column;
+  }
+
+  .concept-frame {
+    border: none;
+  }
+
+  .none-img {
+      display: none;
+  }
+
+  .game-contents {
+    flex-direction: column;
+    padding: 0;
+    background-image: none;
+  }
+
+  .game-tournament-container {
+  max-width: 360px;
+  }
+
+  .game-tournament-detail {
+    margin-left: 0.8rem;
+  }
+
+  .phonesize-game {
+    width: 380px;
+    height: 220px;
+    margin-bottom: 12px;
+  }
+
+  .tournament-image img {
+    padding-top: 0;
+  }
+
+  .game-name p {
+    text-align: center;
+
+  }
+
+  .menu-details {
+    padding: 1.3rem;
+    display: block;
+  }
+
+  .md-left1 {
+    margin: 0;
+  }
+
+  .phone-size {
+    width: 380px;
+    padding-top: 20px;
+  }
+
+  .sns-memo {
+    width: 170px;
+    height: 70px;
+  }
+
+  .sns-border {
+    max-width: 370px;
+  }
+
+  .sns-timeline {
+  max-width: 330px;
+  }
+
+  .access-map {
+    width:90%;
+    height:250px;
+  }
+
+  .access-info-image {
+    margin: 0 auto;
+    margin-bottom: 1.4rem;
+    display: none;
+
+  }
+  
+  .access-info {
+    display: block;
+  }
+
+  .access-info-details-phone {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-image {
+    display: none;
+  } 
+
+  .access-top-image {
+    height: 100px;
+  }
+
+}
+

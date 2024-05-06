@@ -1,0 +1,3 @@
+function redirectToURL() {
+    window.location.href = "https://www.google.com/maps/place/%E3%82%B3%E3%83%B3%E3%82%BB%E3%83%97%E3%83%88%E3%82%AB%E3%83%95%E3%82%A7%E3%81%98%E3%82%85%E3%81%B4%E3%81%9F%E3%83%BC/@34.6596178,135.5034947,17z/data=!3m2!4b1!5s0x6000e767fdd6a225:0x6b6d3321b6b68292!4m6!3m5!1s0x6000e767ff200fad:0xc02125bcd33fc768!8m2!3d34.6596134!4d135.5060696!16s%2Fg%2F1tfsmwsg?hl=ja&entry=ttu";
+  }
